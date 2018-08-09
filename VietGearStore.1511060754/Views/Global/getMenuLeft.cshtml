@@ -1,0 +1,9 @@
+﻿@model IEnumerable<VietGearStore._1511060754.Models.Category>
+<span class="categories"> </span>
+<ul>
+        @foreach (var i in Model)
+        {
+            <li><a href="/danh-muc/@i.meta">@Html.DisplayFor(modelItem => i.name)</a></li>
+        }
+</ul>
+

@@ -1,0 +1,119 @@
+﻿@model VietGearStore._1511060754.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                Xóa Tin tức
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                <h3>Bạn muốn xóa sản phẩm này?</h3>
+                <div>
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Tên sản phẩm
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.name)
+                        </dd>
+
+                        <dt>
+                            Giá
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.price)
+                        </dd>
+
+                        <dt>
+                            Hình ảnh
+                        </dt>
+
+                        <dd>
+                            <img src="~/Content/upload/img/product/" style="width:100px" />
+                        </dd>
+
+                        <dt>
+                            Mô tả
+                        </dt>
+
+                        <dd>
+                            @Html.Raw(Model.description)
+                        </dd>
+
+                        <dt>
+                            Meta
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.meta)
+                        </dd>
+
+                        <dt>
+                            Keyword
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.keyword)
+                        </dd>
+
+                        <dt>
+                            Hiển thị
+                        </dt>
+
+                        <dd>
+                            @(Model.hide.GetValueOrDefault(false) ? "Hiển thị" : "Ẩn")
+                        </dd>
+
+                        <dt>
+                            Vị trí
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.order)
+                        </dd>
+
+                        <dt>
+                            Ngày cập nhật
+                        </dt>
+
+                        <dd>
+                            @(Model.datebegin.HasValue ? Model.datebegin.Value.ToString("dd/MM/yyyy") : "")
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.categoryid)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.categoryid)
+                        </dd>
+
+                    </dl>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+                            @Html.ActionLink("Quay lại", "Index")
+                        </div>
+                    }
+
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->

@@ -1,0 +1,44 @@
+﻿@model List<VietGearStore._1511060754.Models.News>
+
+@{
+    ViewBag.Title ="Tin tức";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+    <div class="main">
+        <div class="content">
+            @{
+                var i = 0;
+            }
+            @foreach (var item in Model)
+            {
+                if (i % 2 == 0)
+                {
+        <div class="image group">
+            <div class="grid images_3_of_1">
+                <img src="~/Content/upload/img/news/@item.img" alt="" />
+            </div>
+            <div class="grid news_desc">
+                <h3>@item.name</h3>
+                <p>@item.description<a href="tin-tuc/@item.meta" title="xem thêm">[....]</a></p>
+            </div>
+        </div>
+                }
+                else
+                {
+        <div class="image group">
+            <div class="grid images_3_of_1">
+                <img src="~/Content/upload/img/news/@item.img" alt="" />
+            </div>
+            <div class="grid news_desc">
+                <h3>@item.name</h3>
+                <p>@item.description<a href="tin-tuc/@item.meta" title="xem thêm">[....]</a></p>
+            </div>
+        </div>
+                }
+                i++;
+            }
+        </div>
+    </div>
+

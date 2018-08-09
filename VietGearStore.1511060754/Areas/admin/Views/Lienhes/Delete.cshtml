@@ -1,0 +1,73 @@
+﻿@model VietGearStore._1511060754.Models.Lienhe
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                Xóa thông tin liên hệ từ khách hàng
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                <h3>Bạn muốn xóa thông tin liên hệ này?</h3>
+                <div>
+
+                    <hr />
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Họ tên
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.name)
+                        </dd>
+
+                        <dt>
+                            Gmail
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.gmail)
+                        </dd>
+
+                        <dt>
+                            Tiêu đề
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.description)
+                        </dd>
+
+                        <dt>
+                            Nội dung
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.detail)
+                        </dd>
+
+                    </dl>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+                            @Html.ActionLink("Quay lại", "Index")
+                        </div>
+                    }
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->

@@ -1,0 +1,9 @@
+﻿@model IEnumerable<VietGearStore._1511060754.Models.Menu>
+<span class="menu"> </span>
+<ul>
+    @foreach (var i in Model)
+    {
+            <li><a href="@ViewBag.meta/@i.meta">@Html.DisplayFor(modelItem => i.name)</a></li>
+    }
+</ul>
+

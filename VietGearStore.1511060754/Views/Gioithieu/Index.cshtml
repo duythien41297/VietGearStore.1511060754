@@ -1,0 +1,24 @@
+﻿@model List<VietGearStore._1511060754.Models.About>
+
+@{
+    ViewBag.Title = "Giới thiệu";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="main">
+    <div class="content">
+        <div class="section group">
+            @foreach (var item in Model)
+                {
+                <div class="col_1_of_3 span_1_of_3">
+                    <h3>CỬA HÀNG CỦA TÔI</h3>
+                    <img src="~/Content/upload/img/about/@item.img" alt=""style="width:50%">
+                    <p>@Html.Raw(item.detail)</p>
+                </div>
+                }
+        </div>
+    </div>
+</div>
+
+
+

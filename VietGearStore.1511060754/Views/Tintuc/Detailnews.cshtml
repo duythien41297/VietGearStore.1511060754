@@ -1,0 +1,19 @@
+﻿@model VietGearStore._1511060754.Models.News
+
+@{
+    ViewBag.Title = "Tin tức";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="main">
+    <div class="content">
+        <div class="section group">
+                <div class="col_1_of_3 span_1_of_3">
+                    <h3>@Model.name</h3>
+                    <img src="~/Content/upload/img/news/@Model.img" alt="" style="width:30%">
+                    <p>@Html.Raw(Model.detail)</p> 
+                </div>
+        </div>
+    </div>
+</div>
+

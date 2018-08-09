@@ -1,0 +1,14 @@
+﻿@model IEnumerable<VietGearStore._1511060754.Models.Slide>
+
+<div id="slider">
+    <div id="mover">
+        @foreach (var i in Model)
+        {
+            <div id="slide-1" class="slide">
+                <div class="slider-img">
+                    <a href="preview.html"><img src="~/Content/upload/img/slide/@i.img" alt="learn more" /></a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,9 @@
+﻿@model IEnumerable < VietGearStore._1511060754.Models.Lienlac>
+
+<span class="section group"></span>
+<ul>
+    @foreach (var i in Model)
+    {
+        <li><a href="#">@Html.DisplayFor(modelItem => i.name)</a></li>
+    }
+</ul>

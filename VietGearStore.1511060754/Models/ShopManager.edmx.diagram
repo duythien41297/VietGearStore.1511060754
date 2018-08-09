@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f480a588d1b94b67a785e42c97e5705c" Name="Diagram1">
+        <EntityTypeShape EntityType="datalinhkienModel.Menu" Width="1.5" PointX="1.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="datalinhkienModel.Category" Width="1.5" PointX="1.125" PointY="3.375" />
+        <EntityTypeShape EntityType="datalinhkienModel.Product" Width="1.5" PointX="3.125" PointY="0.625" />
+        <EntityTypeShape EntityType="datalinhkienModel.Lienhe" Width="1.5" PointX="7.125" PointY="0.625" />
+        <EntityTypeShape EntityType="datalinhkienModel.Lienlac" Width="1.5" PointX="5.125" PointY="0.625" />
+        <EntityTypeShape EntityType="datalinhkienModel.About" Width="1.5" PointX="5.125" PointY="2.875" />
+        <EntityTypeShape EntityType="datalinhkienModel.Logo" Width="1.5" PointX="9" PointY="3.125" />
+        <EntityTypeShape EntityType="datalinhkienModel.Slide" Width="1.5" PointX="9.125" PointY="0.625" />
+        <EntityTypeShape EntityType="datalinhkienModel.Admin" Width="1.5" PointX="1.125" PointY="6" />
+        <EntityTypeShape EntityType="datalinhkienModel.Info" Width="1.5" PointX="7.125" PointY="3" />
+        <EntityTypeShape EntityType="datalinhkienModel.sysdiagram" Width="1.5" PointX="5.375" PointY="6.75" />
+        <EntityTypeShape EntityType="datalinhkienModel.News" Width="1.5" PointX="3.25" PointY="4.375" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

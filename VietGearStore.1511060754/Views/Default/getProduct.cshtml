@@ -1,0 +1,20 @@
+﻿@model List<VietGearStore._1511060754.Models.Product>
+
+@foreach (var item in Model)
+{
+    <div class="grid_1_of_4 images_1_of_4">
+        <a href="/san-pham/@item.meta-@item.id"><img class="images/feature-pic1.jpg" src="/Content/upload/img/product/@item.img" alt=" "></a>
+        <p>@item.name</p>
+        <div class="price-details">
+            <div class="price-number">
+                <p>@string.Format("{0:0,0}", item.price) VNĐ</p>
+            </div>
+            <div class="add-cart">
+                <h4><a href="#">THÊM VÀO GIỎ</a></h4>
+            </div>
+            <div class="clear"></div>
+        </div>
+   </div>
+}
+
+
